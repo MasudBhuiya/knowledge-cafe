@@ -27,7 +27,7 @@ const Blog = ({blog, handleBookMark, handleReadingTime}) => {
                     blog?.hashtags.map((singleTag, index) => <span key={index}><a href="" className="text-xl ms-2 text-blue-500">#{singleTag}</a></span>)
                 }
             </div>
-            <button className="btn text-blue-500 underline" onClick={() => handleReadingTime(blog?.reading_time)}>Marks as read</button>
+            <button className="btn text-blue-500 underline" onClick={() => handleReadingTime(blog?.reading_time, blog?.id)}>Marks as read</button>
         </div>
     );
 };
